@@ -1,8 +1,19 @@
-## 4. Архитектуралық диаграмма
+# Project Management & Infrastructure 2025
+
+## 1. Жобаны жоспарлау (Management)
+* **Әдістеме:** Scrum
+* **Құралдар:** GitHub Projects
+* **Спринттер:** 2 апталық циклдер
+
+## 2. Технологиялық стек
+* **Frontend:** Next.js
+* **Backend:** Go
+* **Инфрақұрылым:** Docker, Kubernetes, Terraform
+
+## 3. Архитектуралық диаграмма
 ```mermaid
 graph TD
-    User((Пайдаланушы)) --> FE[Frontend: Next.js]
-    FE --> BE[API: Go]
+    User((Пайдаланушы)) --> FE[Next.js]
+    FE --> BE[Go API]
     BE --> DB[(PostgreSQL)]
-    BE -.-> Mon[Monitoring: Grafana]
-    CI[CI/CD: GitHub Actions] --> Deploy[Deploy: Docker]# project01
+    CI[GitHub Actions] --> Docker[Docker Image]
